@@ -16,7 +16,7 @@ export default function ProductCard({product} : {product : Product}) {
                     alt={`Imagen de Producto ${product.name}`}
                     width={400}
                     height={600}
-                    property=""
+                    priority
                     unoptimized
                 />
 
