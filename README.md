@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚙️ POS - Next.js / Nest.js
 
-## Getting Started
+POS - Next.js / Nest.js es una interfaz moderna e intuitiva para la gestión de ventas, productos y transacciones en un entorno de punto de venta.  
+Desarrollado con **Next.js 16**, **TypeScript** y **TailwindCSS**, este frontend ofrece una experiencia fluida y eficiente para el usuario final.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Características principales
+
+- 💳 Gestión de ventas 
+- 🧾 Administración de productos y cupones  
+- 🛍️ Carrito de compras interactivo  
+- 🧠 Manejo global del estado con TypeScript  
+- ⚙️ Integración con el backend mediante API REST (NestJS)  
+- 🎨 Interfaz moderna con TailwindCSS  
+- 🔒 Acciones del servidor con Server Actions de Next.js 16  
+
+---
+
+## 🧱 Tecnologías utilizadas
+
+- **Next.js 16**
+- **TypeScript**
+- **TailwindCSS**
+- **Node.js**
+- **Zustand / Context API (para manejo de estado)**
+- **Server Actions (Next.js 16)**
+---
+
+## 📂 Estructura del proyecto
+
+- `app/` → Páginas y rutas principales del proyecto  
+  - `(store)/` → Sección principal del punto de venta  
+  - `admin/` → Panel administrativo  
+  - `coupon/` → Gestión y aplicación de cupones  
+  - `layout.tsx` → Estructura global del layout  
+  - `providers.tsx` → Proveedores globales (contextos, temas, etc.)  
+
+- `components/` → Componentes reutilizables de la interfaz  
+  - `cart/` → Componentes relacionados con el carrito de compras  
+  - `products/` → Componentes para la gestión y visualización de productos  
+  - `transactions/` → Componentes para las transacciones de venta  
+  - `ui/` → Elementos de interfaz de usuario (botones, modales, inputs, etc.)  
+
+- `src/` → Lógica de negocio y configuración  
+  - `api.ts` → Conexión con el backend y manejo de endpoints  
+  - `schemas.ts` → Esquemas y validaciones con TypeScript  
+  - `store.ts` → Manejo del estado global (context o Zustand)  
+  - `utils.ts` → Funciones de utilidad  
+
+- `public/` → Archivos estáticos (imágenes, íconos, etc.)  
+- `actions/` → Acciones del servidor (Server Actions de Next.js)  
+
+---
+
+## ⚙️ Configuración del entorno
+
+Crea un archivo `.env` en la raíz del proyecto con la siguiente variable:
+
+```env
+API_URL=
+DOMAIN=
+NEXT_PUBLIC_API_URL=
+NEXT_PUBLIC_DOMAIN=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Repositorios relacionados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Frontend - Next.js + TS](https://github.com/crisomarjs/pos-frontend)
+- [Backend - Node + Express + TS + PostgreSQL](https://github.com/crisomarjs/pos-backend)
